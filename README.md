@@ -30,6 +30,7 @@ Usage
 To submit a PySpark job to Dataproc, run the following command:
 
 `python main.py -i input_file.csv -o output_directory -b your_bucket_name -c your_cluster_name -d y`
+
 Replace the arguments with your specific values:
 
 -i: Path to the input file to be processed.
