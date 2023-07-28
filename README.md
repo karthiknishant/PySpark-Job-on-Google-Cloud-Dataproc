@@ -34,7 +34,7 @@ Replace the placeholders in the creds.py file with your specific values:
 
 -auto_delete_ttl: None if you dont want to exercise this option.
 
-##Usage
+## Usage
 
 To submit a PySpark job to Dataproc, run the following command:
 
