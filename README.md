@@ -17,14 +17,22 @@ Before running the script, make sure you have the following:
 Set up your GCP credentials by following the instructions in the Google Cloud documentation.
 Replace the placeholders in the creds.py file with your specific values:
 -credential_path: Path to your GCP service account key file.
+
 -project_id: Your GCP project ID.
+
 -region: The region where you want to create the Dataproc cluster.
+
 -zone: The zone where you want to create the Dataproc cluster.
+
 -bucket_name: Name of the Cloud Storage bucket where the input file will be uploaded.
+
 -cluster_name: Name of the Dataproc cluster to be created.
+
 -main_python_file: Path to the main PySpark job file.
+
 -output_file: Path to the output folder in the Cloud Storage bucket. This path should not already exist when you run the script.
-auto_delete_ttl: None if you dont want to exercise this option.
+
+-auto_delete_ttl: None if you dont want to exercise this option.
 
 Usage
 To submit a PySpark job to Dataproc, run the following command:
@@ -33,10 +41,17 @@ To submit a PySpark job to Dataproc, run the following command:
 
 Replace the arguments with your specific values:
 
+
 -i: Path to the input file to be processed.
+
 -o: Path to the output directory.
+
 -b: Name of your Cloud Storage bucket.
+
 -c: Name of your Dataproc cluster.
+
 -d: Use y to delete the cluster after the job, or n to keep the cluster alive.
+
 -ttl :Time in minutes the cluster should be kept alive with no running job (minimum 10)
+
 These arguments replace the ones in creds.py. None of them are mandatory.
